@@ -171,8 +171,8 @@ section {
 
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   margin: auto 0;
 }
 
@@ -366,8 +366,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  height: 200px;
-  width: 400px;
+  height: 100px;
+  width: 150px;
 }
 
 .project-title {
