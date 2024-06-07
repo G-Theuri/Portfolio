@@ -339,13 +339,13 @@ section {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 article {
   display: flex;
   width: 8rem;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 0.1rem;
   font-size: 2rem;
 }
