@@ -267,62 +267,20 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
 const PROJECTS = [
   {
     num: "01",
-    title: "The Data Collector",
+    title: "Deal-radar",
     status: "building",
-    desc: "A fully automated scraping pipeline that collects real-world Kenyan market data, applies schema-validated transformations, and loads clean records into Supabase on a scheduled AWS Lambda trigger — with error logging and alerting built in.",
+    desc: "Stealth Zillow scraper using CDP API interception and nodriver — feeds validated property data into an AI deal-evaluation pipeline.",
     pipeline: [
       { icon: "🕷️", label: "Scraper" },
-      { icon: "🔧", label: "Transform" },
-      { icon: "⚡", label: "Lambda" },
-      { icon: "🗄️", label: "Supabase" }
-    ],
-    tags: ["Python", "Supabase", "AWS Lambda", "EventBridge", "PostgreSQL"],
-    github: ""
-  },
-  {
-    num: "02",
-    title: "The Pipeline",
-    status: "upcoming",
-    desc: "Production-grade orchestration using Apache Airflow on EC2. Includes DAG design, task dependency management, automated retries, and failure alerting — built the way companies actually run pipelines.",
-    pipeline: [
-      { icon: "🕷️", label: "Scraper" },
-      { icon: "🌬️", label: "Airflow" },
-      { icon: "🖥️", label: "EC2" },
+      { icon: "✅", label: "Validate" },
+      { icon: "🔧", label: "dbt Transform" },
       { icon: "🗄️", label: "Supabase" },
-      { icon: "🔔", label: "Alerts" }
+      { icon: "📊", label: "Visualize" }
     ],
-    tags: ["Apache Airflow", "AWS EC2", "Python", "DAG Design", "Monitoring"],
-    github: ""
+    tags: ["Python", "nodriver", "Pydantic", "dbt", "Prefect", "Supabase", "PostgreSQL"],
+    github: "https://github.com/G-Theuri/deal-radar"
   },
-  {
-    num: "03",
-    title: "The Warehouse",
-    status: "upcoming",
-    desc: "A dimensional data warehouse on AWS Redshift. Raw collected data is modelled into facts and dimensions, transformed via SQL, and surfaced through a clean Metabase dashboard readable by non-technical stakeholders.",
-    pipeline: [
-      { icon: "🗄️", label: "Raw Data" },
-      { icon: "🔄", label: "SQL / dbt" },
-      { icon: "🏭", label: "Redshift" },
-      { icon: "📊", label: "Metabase" }
-    ],
-    tags: ["AWS Redshift", "SQL", "Dimensional Modeling", "dbt", "Metabase"],
-    github: ""
-  },
-  {
-    num: "04",
-    title: "The Product",
-    status: "upcoming",
-    desc: "An end-to-end data product built for the Kenyan/African market — from raw collection to a live, publicly accessible dashboard. The full DE stack shipped as a real product generating value for real users.",
-    pipeline: [
-      { icon: "🕷️", label: "Scraper" },
-      { icon: "🌬️", label: "Airflow" },
-      { icon: "🏭", label: "Warehouse" },
-      { icon: "📊", label: "Dashboard" },
-      { icon: "💰", label: "Product" }
-    ],
-    tags: ["Full Stack DE", "Product", "Africa Market", "Live Data", "SaaS"],
-    github: ""
-  }
+  
 ];
 
 // ── Render ──
